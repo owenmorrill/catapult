@@ -50,18 +50,20 @@
 		{{ page.primary_menu }}
 		{{ page.secondary_menu }}
   </header>
-	{% if homepage_hero_image %}
-    <div  id="hero-image">
-      <figure>
-        <img
-            src="{{ homepage_hero_image }}"
-            alt="{{ homepage_hero_image_alt_text }}">
-      </figure>
-      
-    <!--
-    <iframe id="hero-image" src="https://www.youtube.com/embed/_Ub1Qmzouxw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen showinfo=0 controls=0 autohide=1></iframe>
-    -->
-    </div>
+	{% if is_front %}
+    {% if homepage_hero_image %}
+      <div  id="hero-image">
+        <figure>
+          <img
+              src="{{ homepage_hero_image }}"
+              alt="{{ homepage_hero_image_alt_text }}">
+        </figure>
+        
+      <!--
+      <iframe id="hero-image" src="https://www.youtube.com/embed/_Ub1Qmzouxw" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen showinfo=0 controls=0 autohide=1></iframe>
+      -->
+      </div>
+    {% endif %}
 	{% endif %}
   
   {{ page.breadcrumb }}
