@@ -47,10 +47,9 @@
   <header role="banner" id="header">
     {{ page.header }}
 		{{ page.primary_menu }}
+		{{ page.secondary_menu }}
   </header>
-
-  {{ page.secondary_menu }}
-
+  
   {{ page.breadcrumb }}
 
   {{ page.highlighted }}
@@ -58,6 +57,14 @@
   {{ page.help }}
 
   <main role="main">
+    <div id="hero">
+      {{ page.hero }}
+    </div>
+    
+    <div id="block-row">
+      {{ page.block_row }}
+    </div>
+    
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">

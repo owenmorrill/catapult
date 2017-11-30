@@ -10,5 +10,7 @@ libraries:
 
 regions:
   header: Header
+  hero: Hero
+  block_row: Block Row
   content: Content
   footer: Footer
