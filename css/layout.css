@@ -16,3 +16,48 @@
 .block-row-block > .flex-item > p {
   line-height: 1.35em;
 }
+
+
+/*
+ * Header
+ *
+ */
+#header .region-header {
+  padding-bottom: 1em;
+  border-bottom: 1px solid black;
+  margin: 1em 0 0;
+}
+@media screen and (min-width: 900px) {
+  #header .region-header {
+    display: flex;
+  }
+}
+
+/* Logo and site name, slogan. */
+#block-catapult-branding {
+  min-height: 65px;
+  display: flex;
+  flex: 1 0 0;
+  justify-content: flex-start;
+}
+#block-catapult-branding img {
+  display: block;
+  height: 65px;
+  width: auto;
+  margin: 0 1em;
+}
+#block-catapult-branding .branding-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 65px;
+}
+
+/*
+ * Navigation
+ *
+ */
+#block-catapult-main-menu {
+  flex: 1 0 0;
+  margin: 0 1em;
+}

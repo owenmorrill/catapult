@@ -39,50 +39,18 @@ p {
  * Header
  *
  */
-#header .region-header {
-  display: flex;
-  padding-bottom: 1em;
-  border-bottom: 1px solid black;
-  margin: 1em 0 0;
-}
-
-/* Logo and site name, slogan. */
-#block-catapult-branding {
-  min-height: 65px;
-  display: flex;
-  flex: 1 0 0;
-  justify-content: flex-start;
-}
-#block-catapult-branding img {
-  display: block;
-  height: 65px;
-  width: auto;
-  margin: 0 1em;
-}
-#block-catapult-branding .branding-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 65px;
-}
 .site-name {
+  color: black;
   font-size: 2em;
 }
 .site-name a {
+  color: black;
+  font-weight: bold;
   text-decoration: none;
 }
 .site-slogan {
   font-size: 1em;
   font-style: italic;
-}
-
-/* Main menu stuff, not navigation, just block though. */
-#block-catapult-main-menu {
-  flex: 2 0 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin: 0 1em;
 }
 
 /*
@@ -91,16 +59,20 @@ p {
  */
 ul.menu {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  width: 100%;
+  flex-direction: column;
+}
+@media screen and (min-width: 900px) {
+  ul.menu {
+    display: flex;
+    flex-direction: row;
+  }
 }
 ul.menu li.menu-item {
+
 }
 ul.menu a {
   font-family: 'Open Sans', sans-serif;
   text-transform: capitalize;
-  font-size: 1.4em;
   text-decoration: none;
   color: #000;
 }
@@ -108,13 +80,14 @@ ul.menu a:hover {
   text-decoration: underline;
 }
 
+
 /*
  * Hero image
  *
  */
 #hero-image {
   display: flex;
-  height: 70vh;
+  max-height: 70vh;
 }
 iframe#hero-image {
   width: 100vw;
