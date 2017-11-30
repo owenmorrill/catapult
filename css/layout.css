@@ -32,18 +32,18 @@
 }
 
 /* Logo and site name, slogan. */
-#block-catapult-branding {
+#block-catapult-branding, #block-catapult-sitebranding {
   min-height: 65px;
   display: flex;
   max-width: fit-content;
 }
-#block-catapult-branding img {
+#block-catapult-branding, #block-catapult-sitebranding img {
   display: block;
   height: 65px;
   width: auto;
   margin: 0 1em;
 }
-#block-catapult-branding .branding-text {
+#block-catapult-branding, #block-catapult-sitebranding .branding-text {
   display: flex;
   flex-direction: column;
   justify-content: center;

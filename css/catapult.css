@@ -34,12 +34,17 @@ p {
   font-family: 'Lora', serif;
   font-size: 1.25em;
 }
+
+/* Links */
 a {
   color: darkgray;
   text-decoration: underline;
 }
 a:hover {
    color: orange;
+}
+h2 a {
+  text-decoration: none;
 }
 
 /*
