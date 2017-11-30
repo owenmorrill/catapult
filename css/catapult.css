@@ -43,7 +43,7 @@ p {
   display: flex;
   padding-bottom: 1em;
   border-bottom: 1px solid black;
-  margin: 1em 0;
+  margin: 1em 0 0;
 }
 
 /* Logo and site name, slogan. */
@@ -106,6 +106,34 @@ ul.menu a {
 }
 ul.menu a:hover {
   text-decoration: underline;
+}
+
+/*
+ * Hero image
+ *
+ */
+#hero-image {
+  display: flex;
+  height: 70vh;
+}
+iframe#hero-image {
+  width: 100vw;
+}
+#hero-image figure {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#hero-image img {
+  width: 100vw;
+}
+
+/*
+ * Hero block
+ *
+ */
+.region-hero {
+  margin: 3em;
 }
 
 /*
