@@ -34,6 +34,13 @@ p {
   font-family: 'Lora', serif;
   font-size: 1.25em;
 }
+a {
+  color: darkgray;
+  text-decoration: underline;
+}
+a:hover {
+   color: orange;
+}
 
 /*
  * Header
@@ -66,7 +73,7 @@ ul.menu {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: flex-end;
   }
 }
 ul.menu li.menu-item {
@@ -82,10 +89,9 @@ ul.menu a {
   font-family: 'Open Sans', sans-serif;
   text-transform: capitalize;
   text-decoration: none;
-  color: #000;
 }
-ul.menu a:hover {
-  text-decoration: underline;
+ul.menu a.is-active:hover {
+  color: orange;
 }
 
 
