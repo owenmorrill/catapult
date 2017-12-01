@@ -37,13 +37,13 @@
   display: flex;
   max-width: fit-content;
 }
-#block-catapult-branding, #block-catapult-sitebranding img {
+#block-catapult-branding img, #block-catapult-sitebranding img {
   display: block;
   height: 65px;
   width: auto;
   margin: 0 1em;
 }
-#block-catapult-branding, #block-catapult-sitebranding .branding-text {
+#block-catapult-branding .branding-text, #block-catapult-sitebranding .branding-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,4 +57,7 @@
 #block-catapult-main-menu {
   flex: 1;
   justify-content: flex-end;
+}
+#block-catapult-main-menu .menu-item--collapsed {
+
 }
