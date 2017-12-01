@@ -28,6 +28,7 @@
 @media screen and (min-width: 900px) {
   #header .region-header {
     display: flex;
+    align-items: center;
   }
 }
 

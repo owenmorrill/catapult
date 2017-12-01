@@ -71,6 +71,13 @@ h2 a {
   font-size: 1em;
   font-style: italic;
 }
+#search-block-form {
+  margin: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+#search-block-form input {
+  border-radius: 8px;
+}
 
 /*
  * Navigation
